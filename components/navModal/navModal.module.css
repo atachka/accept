@@ -1,0 +1,21 @@
+.navModal__container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-color: green;
+}
+
+.openModal {
+  animation: openModalAnimation 1s ease-in-out forwards;
+}
+
+@keyframes openModalAnimation {
+  0% {
+    width: 4%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
