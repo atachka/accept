@@ -1,9 +1,18 @@
+.navModal__wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.25);
+}
 .navModal__container {
   position: absolute;
   right: 0;
   top: 0;
   height: 100%;
   background-color: green;
+  opacity: 1;
 }
 
 .openModal {
