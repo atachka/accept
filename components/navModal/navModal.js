@@ -5,6 +5,10 @@ import Image from "next/image";
 export default function NavModal({ isOpen, setIsOpen }) {
   return isOpen ? (
     <div
+      onClick={(e) => {
+        e.stopPropagation();
+        console.log("es?");
+      }}
       className={`${styles["navModal__container"]} ${
         isOpen ? styles["openModal"] : ""
       }`}

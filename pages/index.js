@@ -10,11 +10,16 @@ export default function Home() {
   console.log(isOpen);
   return (
     <div
+      onClick={() => {
+        if (isOpen) {
+          setIsOpen(false);
+        }
+      }}
       style={{
         width: "100vw",
         height: "100vh",
         position: "relative",
-        filter: "brightness(70%)",
+        backgroundColor: isOpen ? "rgba(128,128,128,0.75)" : false,
       }}
     >
       <Header setIsOpen={setIsOpen} />
