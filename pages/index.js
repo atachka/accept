@@ -10,22 +10,14 @@ export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   console.log(isOpen);
   return (
-    <div>
-      <div
-        onClick={() => {
-          if (isOpen) {
-            setIsOpen(false);
-          }
-        }}
-        className="asdf"
-        style={{
-          width: "100vw",
-          height: "100vh",
-          position: "relative",
-          backgroundImage: `url(${backGroundImage.src})`,
-          backgroundSize: "cover",
-        }}
-      >
+    <div
+      onClick={() => {
+        if (isOpen) {
+          setIsOpen(false);
+        }
+      }}
+    >
+      <div className="backgroundImage">
         <Header setIsOpen={setIsOpen} />
         <HeroSection />
         <NavModal setIsOpen={setIsOpen} isOpen={isOpen} />
