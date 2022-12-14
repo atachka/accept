@@ -30,6 +30,14 @@ a {
   font-family: "Nothing You Could Do";
   src: url("../public/fonts/NothingYouCouldDo-Regular.ttf");
 }
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../public/fonts/HelveticaNeueLight.ttf");
+}
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  src: url("../public/fonts/HelveticaNeuBold.ttf");
+}
 
 @font-face {
   font-family: "FiraGO";

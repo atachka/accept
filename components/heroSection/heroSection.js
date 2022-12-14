@@ -1,6 +1,31 @@
 import React from "react";
 import styles from "./heroSection.module.css";
-
+import geo from "../../public/languages/geo";
+import en from "../../public/languages/en";
+import { useRouter } from "next/router";
 export default function HeroSection() {
-  return <div>heroSection</div>;
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "en" ? en : geo;
+  return (
+    <div className={styles["heroSection__wrapper"]}>
+      <div className={styles["heroSection__container"]}>
+        <div
+          className={`${styles["heroSection--text--first__container"]} ${styles["heroSection--text__container"]}`}
+        >
+          <p>{t.hero.first}</p>
+        </div>
+        <div
+          className={`${styles["heroSection--text--second__container"]} ${styles["heroSection--text__container"]}`}
+        >
+          <p>{t.hero.second}</p>
+        </div>
+        <div
+          className={`${styles["heroSection--text--third__container"]} ${styles["heroSection--text__container"]}`}
+        >
+          <p>{t.hero.third}</p>
+        </div>
+      </div>
+    </div>
+  );
 }
