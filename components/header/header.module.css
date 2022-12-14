@@ -7,13 +7,12 @@
   display: none;
 }
 .header--left__container {
-  width: 210px;
   height: 78px;
   font-family: "Nothing You Could Do";
   font-size: 60px;
   line-height: 78px;
   color: #141f72;
-  margin: 10px 10px 10px 11vw;
+  margin: 10px 5px 0 10%;
 }
 .header--right__container {
   color: #222222;
@@ -25,7 +24,9 @@
   justify-content: space-between;
   font-size: 16px;
   line-height: 24px;
+  flex-shrink: 0;
 }
+
 @media (max-width: 760px) {
   .header--left__container {
     font-size: 24px;
