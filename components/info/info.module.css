@@ -1,16 +1,13 @@
 .info__wrapper {
-  width: 100%;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: relative;
 }
-
 .info__container {
-  left: 5.62%;
-  right: 5.62%;
-  top: 7.5rem;
-  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
   width: 90%;
   height: 15rem;
   background: #ffffff;
@@ -19,6 +16,72 @@
   border-radius: 16px;
 }
 .info--item__container {
-  height: 5vh;
-  width: 2vw;
+  display: flex;
+  height: 15vh;
+  width: 20vw;
+}
+.info--logo__container {
+  margin: 0 1vw 0 0;
+}
+
+.info--text--title {
+  font-family: "Helvetica Neue";
+  font-size: 1vw;
+  font-weight: bold;
+  line-height: 20px;
+  color: #353840;
+  margin: 0 0 16px 0;
+}
+.info--text--description {
+  display: inline-block;
+  font-family: "Helvetica Neue";
+  font-size: 0.75vw;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #707a83;
+}
+
+@media (max-width: 760px) {
+  .info__wrapper {
+    position: relative;
+  }
+  .info__container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    min-height: 30rem;
+  }
+  .info--logo__container > img {
+    width: 5vw;
+    height: auto;
+  }
+  .info--item__container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 11vw;
+    width: auto;
+  }
+  .info--text__container {
+    min-width: auto;
+  }
+  .info--text--title {
+    font-family: "Helvetica Neue";
+    font-size: 5vw;
+    font-weight: bold;
+    line-height: 20px;
+    color: #353840;
+    margin: 0 0 16px 0;
+  }
+  .info--text--description {
+    display: inline-block;
+    font-family: "Helvetica Neue";
+    font-size: 4vw;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #707a83;
+  }
 }

@@ -1,7 +1,8 @@
 .header__container {
   height: 80px;
+  width: 95%;
+  margin: 0 2.5% 0 2.5%;
   display: flex;
-  justify-content: space-between;
 }
 .header--right__container > img {
   display: none;
@@ -9,10 +10,10 @@
 .header--left__container {
   height: 78px;
   font-family: "Nothing You Could Do";
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 78px;
   color: #141f72;
-  margin: 10px 5px 0 10%;
+  margin-right: auto;
 }
 .header--right__container {
   color: #222222;
@@ -22,14 +23,13 @@
   margin: 0 10% 0 0;
   font-family: "FiraGO";
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
-  flex-shrink: 0;
 }
 
 @media (max-width: 760px) {
   .header--left__container {
-    font-size: 24px;
+    font-size: 2.6rem;
     line-height: 36px;
     display: flex;
     align-items: center;
@@ -51,7 +51,7 @@
   width: 160px;
   height: 48px;
   display: flex;
-  font-size: 14px;
+  font-size: 0.9rem;
   align-items: center;
   justify-content: center;
   border: 1px solid #141f72;

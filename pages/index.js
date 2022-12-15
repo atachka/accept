@@ -20,8 +20,8 @@ export default function Home() {
     >
       <div className="backgroundImage">
         <Header setIsOpen={setIsOpen} />
-        <HeroSection />
         <NavModal setIsOpen={setIsOpen} isOpen={isOpen} />
+        <HeroSection />
         <Info />
       </div>
     </div>

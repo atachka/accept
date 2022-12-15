@@ -11,7 +11,7 @@ export default function Header({ setIsOpen }) {
   const t = locale === "en" ? en : geo;
 
   return (
-    <header className={styles.header__container}>
+    <header className={styles["header__container"]}>
       <div className={styles["header--left__container"]}>
         <p className={"header--left--text"}>Accept</p>
       </div>
