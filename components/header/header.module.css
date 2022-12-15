@@ -37,6 +37,7 @@
   .header--right__container {
     justify-content: flex-end;
     margin: 0 5% 0 0;
+    width: auto;
   }
   .header--right__container > .header--right--text__container {
     display: none;

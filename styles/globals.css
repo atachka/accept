@@ -50,7 +50,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 80vh;
+  height: 65vh;
 }
 @media (max-width: 760px) {
   .backgroundImage {
