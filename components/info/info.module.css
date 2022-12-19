@@ -23,6 +23,10 @@
 .info--logo__container {
   margin: 0 1vw 0 0;
 }
+.info--logo__container > img {
+  width: 2.5vw;
+  height: auto;
+}
 
 .info--text--title {
   font-family: "Helvetica Neue";
@@ -35,7 +39,8 @@
 .info--text--description {
   display: inline-block;
   font-family: "Helvetica Neue";
-  font-size: 0.75vw;
+  font-size: 1vw;
+  min-width: 140px;
   line-height: 24px;
   letter-spacing: 0.2px;
   color: #707a83;
@@ -50,8 +55,9 @@
     justify-content: space-around;
     align-items: center;
     position: absolute;
+    top: 6rem;
     width: 90%;
-    min-height: 30rem;
+    min-height: 40rem;
   }
   .info--logo__container > img {
     width: 5vw;
@@ -62,7 +68,8 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    height: 11vw;
+    height: auto;
+    padding: 5px;
     width: auto;
   }
   .info--text__container {
@@ -83,5 +90,10 @@
     line-height: 24px;
     letter-spacing: 0.2px;
     color: #707a83;
+  }
+}
+@media (max-width: 360px) {
+  .info__container {
+    top: 11rem;
   }
 }

@@ -22,7 +22,8 @@ a {
   }
   body {
     color: white;
-    background: black;
+
+    background: white;
   }
 }
 
@@ -49,6 +50,5 @@ a {
   background-image: url("../public/images/BackgroundImage.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media (max-width: 760px) {
+  height: 600px;
 }
