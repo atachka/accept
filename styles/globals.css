@@ -46,9 +46,8 @@ a {
 }
 
 .backgroundImage {
-  position: relative;
   background-image: url("../public/images/BackgroundImage.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 700px;
 }

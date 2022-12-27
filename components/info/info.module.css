@@ -1,5 +1,5 @@
 .info__wrapper {
-  margin-top: 100px;
+  margin-top: -120px;
   display: flex;
   justify-content: center;
 }
@@ -48,14 +48,12 @@
 
 @media (max-width: 760px) {
   .info__wrapper {
-    position: relative;
+    margin-top: -250px;
   }
   .info__container {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
-    top: 6rem;
     width: 90%;
     min-height: 40rem;
   }
@@ -93,7 +91,7 @@
   }
 }
 @media (max-width: 360px) {
-  .info__container {
-    top: 11rem;
+  .info__wrapper {
+    margin-top: -125px;
   }
 }
