@@ -11,10 +11,17 @@ export default function Map() {
     zoom: 15,
   });
   return (
-    <div style={{ width: "300px", height: "300px" }}>
+    <div
+      style={{
+        width: "100%",
+        height: "100%",
+        maxWidth: "684px",
+        maxHeight: "380px",
+      }}
+    >
       <ReactMapGL
         {...viewport}
-        style={{ width: "684px", height: "380px" }}
+        style={{ width: "100%", height: "100%", borderRadius: "4px" }}
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_TOKEN}
         onMove={(nextViewport) => setViewport(nextViewport.viewState)}
         mapStyle="mapbox://styles/ata123/claausf30002514phgizd0nb0"

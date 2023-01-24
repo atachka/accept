@@ -1,8 +1,15 @@
-.header__container {
+.header__wrapper {
   height: 80px;
-  width: 95%;
-  margin: 0 2.5% 0 2.5%;
+  width: 92.5%;
+  margin: 0 2.5% 0 5%;
   display: flex;
+  justify-content: center;
+}
+.header__container {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-around;
 }
 .header--right__container > img {
   display: none;
