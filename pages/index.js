@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Header from "../components/header/header";
 import HeroSection from "../components/heroSection/heroSection";
 import Info from "../components/info/info";
@@ -8,9 +8,9 @@ import Map from "../components/map/map";
 import NavModal from "../components/navModal/navModal";
 import Service from "../components/service/service";
 import Contact from "../components/contact/contact";
+import Footer from "../components/footer/footer";
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
   return (
     <div
       onClick={() => {
@@ -27,6 +27,7 @@ export default function Home() {
       <Info />
       <Service />
       <Contact />
+      <Footer />
     </div>
   );
 }

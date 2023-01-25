@@ -60,9 +60,9 @@
     max-width: 366px;
     min-height: 40rem;
     padding: 5px;
+    max-width: 1278px;
   }
-  .info--logo__container > img {
-  }
+
   .info--item__container {
     flex-direction: column;
     justify-content: space-between;

@@ -31,12 +31,12 @@ export default function Service() {
   const t = locale === "en" ? en : geo;
   return (
     <div className={styles["service__wrapper"]}>
-      <div className={styles["service__container"]}>
+      <div className={styles["service__container"]} id="service__container">
         <div className={styles["service--title__container"]}>
-          <p>სერვისები</p>
+          <p>{t.service.title}</p>
         </div>
         <div className={styles["service--items__container"]}>
-          {t.service.map((item, index) => renderItem(index, item))}
+          {t.service.services.map((item, index) => renderItem(index, item))}
         </div>
       </div>
     </div>
