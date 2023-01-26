@@ -4,6 +4,13 @@ export default {
     services: "services",
     about: "about us",
   },
+  navModal: {
+    main: "Main",
+    aboutUs: "About Us",
+    services: "Services",
+    contact: "Contact",
+    changeLan: "Change Language",
+  },
   hero: {
     first: "Quality oriented service",
     second: "Tax consulting, accounting and auditing",

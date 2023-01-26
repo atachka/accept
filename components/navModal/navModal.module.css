@@ -1,7 +1,7 @@
 .navModal__wrapper {
   position: fixed;
   z-index: 10000;
-
+  color: black;
   right: 0;
   top: 0;
   height: 101%;
@@ -36,7 +36,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 175px;
+  width: 200px;
   justify-content: flex-start;
 }
 .navModal-item__container:active {

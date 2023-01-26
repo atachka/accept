@@ -9,7 +9,10 @@ export default function HeroSection() {
   const t = locale === "en" ? en : geo;
   return (
     <div className={styles["heroSection__wrapper"]}>
-      <div className={styles["heroSection__container"]}>
+      <div
+        className={styles["heroSection__container"]}
+        id="heroSection__container"
+      >
         <div
           className={`${styles["heroSection--text--first__container"]} ${styles["heroSection--text__container"]}`}
         >

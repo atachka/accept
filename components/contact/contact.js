@@ -2,21 +2,27 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import Map from "../map/map";
 import styles from "./contact.module.css";
+import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import geo from "../../public/languages/geo";
 import en from "../../public/languages/en";
-
+import MessageArrows from "../../public/images/MessageArrows.png";
 export default function Contact() {
+  const [inputErrors, setInputErrors] = useState({});
+  const [inputs, setInput] = useState({});
+  const [messageState, setMessageState] = useState("default");
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : geo;
-  const [inputErrors, setInputErrors] = useState({});
-  const [inputs, setInput] = useState({});
   const handleInput = (e) => {
     setInput({ ...inputs, [e.target.name]: e.target.value });
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (messageState === "sending") {
+      return;
+    }
+
     let i = 0;
     let errors = {};
     while (i < e.target.length - 2) {
@@ -42,6 +48,7 @@ export default function Contact() {
     return false;
   };
   const sendEmail = (e) => {
+    setMessageState("sending");
     emailjs
       .send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
@@ -56,6 +63,7 @@ export default function Contact() {
       )
       .then(
         (result) => {
+          setMessageState("default");
           console.log(result.text);
         },
         (error) => {
@@ -65,7 +73,7 @@ export default function Contact() {
   };
   return (
     <div className={styles["contact__wrapper"]}>
-      <div className={styles["contact__container"]}>
+      <div className={styles["contact__container"]} id="contact__container">
         <div className={styles["contact--title__container"]}>
           <p>{t.contact.title}</p>
         </div>
@@ -114,7 +122,17 @@ export default function Contact() {
                   className={styles["contact--form--textarea"]}
                 />
               </div>
-              <button>{t.contact.send}</button>
+              <button>
+                {messageState === "default" ? (
+                  t.contact.send
+                ) : (
+                  <Image
+                    className={styles["rotate"]}
+                    src={MessageArrows}
+                    alt=""
+                  />
+                )}
+              </button>
             </form>
           </div>
         </div>

@@ -16,7 +16,6 @@ export default function Footer() {
     window.open(`https://${page}`, "_blank", "noreferrer");
   };
   const onChangeLanguage = (e) => {
-    e.preventDefault();
     router.push(router.asPath, undefined, {
       locale: locale === "en" ? "geo" : "en",
     });
@@ -43,16 +42,16 @@ export default function Footer() {
             </p>
             <div className={styles["footer-info-item-content__container"]}>
               <div className={styles["footer-info-contact-item__container"]}>
-                <p> {t.footer.contact.addressTitle}</p>
-                <p> {t.footer.contact.address}</p>
+                <p>{t.footer.contact.addressTitle}</p>
+                <p>{t.footer.contact.address}</p>
               </div>
               <div className={styles["footer-info-contact-item__container"]}>
-                <p> {t.footer.contact.emailTitle}</p>
-                <p> {t.footer.contact.email}</p>
+                <p>{t.footer.contact.emailTitle}</p>
+                <p>{t.footer.contact.email}</p>
               </div>
               <div className={styles["footer-info-contact-item__container"]}>
-                <p> {t.footer.contact.phoneTitle}</p>
-                <p> {t.footer.contact.phone}</p>
+                <p>{t.footer.contact.phoneTitle}</p>
+                <p>{t.footer.contact.phone}</p>
               </div>
             </div>
           </div>
@@ -72,7 +71,6 @@ export default function Footer() {
           </div>
           <div className={styles["footer-info-item__container"]}>
             <p className={styles["footer-info-item-title"]}>
-              {" "}
               {t.footer.services.title}
             </p>
             <div className={styles["footer-info-item-content__container"]}>
@@ -92,14 +90,14 @@ export default function Footer() {
                 className={styles["footer-bottom-item__container"]}
               >
                 <Image src={Globe} alt="" />
-                {t.footer.bottom.changeLang}
+                <p>{t.footer.bottom.changeLang}</p>
               </div>
               <div
                 onClick={scrollToTop}
                 className={styles["footer-bottom-item__container"]}
               >
                 <Image src={TopButton} alt="" />
-                {t.footer.bottom.returnToMain}
+                <p> {t.footer.bottom.returnToMain}</p>
               </div>
             </div>
           </div>

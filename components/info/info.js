@@ -26,7 +26,7 @@ export default function Info() {
   };
   return (
     <div className={styles["info__wrapper"]}>
-      <div className={styles["info__container"]}>
+      <div className={styles["info__container"]} id="info__container">
         {renderItem(bulbImage, t.info.title1, t.info.description1)}
         {renderItem(bookImage, t.info.title2, t.info.description2)}
         {renderItem(calcImage, t.info.title3, t.info.description3)}
