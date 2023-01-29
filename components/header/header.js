@@ -14,7 +14,7 @@ export default function Header({ setIsOpen }) {
     <div className={styles["header__wrapper"]}>
       <header className={styles["header__container"]}>
         <div className={styles["header--left__container"]}>
-          <p className={"header--left--text"}>Accept</p>
+          <h1 className={"header--left--text"}>Accept</h1>
         </div>
         <div className={styles["header--right__container"]}>
           <div className={styles["header--right--text__container"]}>

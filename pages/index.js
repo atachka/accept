@@ -12,22 +12,31 @@ import Footer from "../components/footer/footer";
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div
-      onClick={() => {
-        if (isOpen) {
-          setIsOpen(false);
-        }
-      }}
-    >
-      <div className="backgroundImage">
-        <Header setIsOpen={setIsOpen} />
-        <NavModal setIsOpen={setIsOpen} isOpen={isOpen} />
-        <HeroSection />
+    <>
+      <Head>
+        <title>Accept</title>
+        <meta
+          name="description"
+          content="საგადასახადო კონსულტაცია, აუდიტი, ბუღალტერია, ქონების შეფასება"
+        ></meta>
+      </Head>
+      <div
+        onClick={() => {
+          if (isOpen) {
+            setIsOpen(false);
+          }
+        }}
+      >
+        <div className="backgroundImage">
+          <Header setIsOpen={setIsOpen} />
+          <NavModal setIsOpen={setIsOpen} isOpen={isOpen} />
+          <HeroSection />
+        </div>
+        <Info />
+        <Service />
+        <Contact />
+        <Footer />
       </div>
-      <Info />
-      <Service />
-      <Contact />
-      <Footer />
-    </div>
+    </>
   );
 }

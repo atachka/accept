@@ -8,8 +8,10 @@ export default function HeroSection() {
   const { locale } = router;
   const t = locale === "en" ? en : geo;
   return (
-    <div className={styles["heroSection__wrapper"]}>
-      <div
+    <main className={styles["heroSection__wrapper"]}>
+      <article
+        itemScope
+        itemType="https://schema.org/Article"
         className={styles["heroSection__container"]}
         id="heroSection__container"
       >
@@ -28,7 +30,7 @@ export default function HeroSection() {
         >
           <p>{t.hero.third}</p>
         </div>
-      </div>
-    </div>
+      </article>
+    </main>
   );
 }

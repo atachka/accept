@@ -17,11 +17,14 @@
 .header--left__container {
   height: 78px;
   font-family: "Nothing You Could Do";
-  font-size: 3.75rem;
   line-height: 78px;
   color: #141f72;
   margin-right: auto;
+  font-weight: normal;
+
+  font-size: 60px;
 }
+
 .header--right__container {
   color: #222222;
   width: 500px;

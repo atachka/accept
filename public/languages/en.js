@@ -13,7 +13,7 @@ export default {
   },
   hero: {
     first: "Quality oriented service",
-    second: "Tax consulting, accounting and auditing",
+    second: "Tax consulting, Accounting, Auditing, Property valuation",
     third:
       "Our services will be provided by professionals certified by the Federation of Professional Accountants and Auditors of Georgia.",
   },

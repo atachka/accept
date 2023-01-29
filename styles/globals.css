@@ -26,7 +26,10 @@ a {
     background: white;
   }
 }
-
+h1 {
+  font-size: inherit;
+  font-weight: inherit;
+}
 @font-face {
   font-family: "Nothing You Could Do";
   src: url("../public/fonts/NothingYouCouldDo-Regular.ttf");
